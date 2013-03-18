@@ -101,7 +101,7 @@
         $item.appendTo("#repos");
       }
 
-      $.getJSON("https://api.github.com/users/jtauber/repos?callback=?", function (result) {
+      $.getJSON("https://api.github.com/users/jtauber/repos?callback=?&per_page=100", function (result) {
         var repos = result.data;
 
         $(function () {
